@@ -1,58 +1,75 @@
-html, body, #root {
-    height: 100%;
-    width: 100%;
+:root {
+  --dark-blue: #444554;
+  --purple: #444554;
+  --cream: #fdfdfd;
+}
 
-    font-family: 'Lora', sans-serif;
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-family: "Lora", "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 
-    color: #2E382E;
-    background: #FDFDFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--dark-blue);
+  background: var(--cream);
 }
 
-.mirrored {
-    flex: 3 1 auto;
-    max-height: 42.5%;
+.mirror {
+  flex: 3 1 auto;
+  max-height: 42.5%;
 
-    margin: 0;
-    padding: 0 3rem;
-    font-size: 5rem;
-    text-align: justify;
-    overflow-y: auto;
-    
-    /* overflow & word-break section */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+  margin: 0;
+  font-size: 5rem;
+  text-align: justify;
+  overflow-y: auto;
+  width: 100%;
+
+  /* overflow & word-break section */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.mirror p {
+  margin: 0;
 }
 
 .controls {
-    /* background: #F5F5F5; */
-    background: #EFEFEF;
+  /* background: #F5F5F5; */
+  /* background: #efefef; */
 
-    height: 10%;
-    width: 100%;
-    border-top: 1px dashed #2E382E;
-    border-bottom: 1px dashed #2E382E;
+  height: 15%;
+  width: 100%;
+  border-top: 1px dashed var(--dark-blue);
+  border-bottom: 1px dashed var(--dark-blue);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-input[type='text'] {
-    padding: 3px;
-    margin: 5px 0;
+input[type="text"] {
+  padding: 3px;
+  margin: 5px 0;
 }

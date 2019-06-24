@@ -1,12 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import 'typeface-lora';
-import 'normalize.css';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "typeface-lora";
+import "./index.css";
 
-ReactDOM.render(
-    <App 
-    />, 
-    document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
